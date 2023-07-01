@@ -36,6 +36,7 @@ func main() {
 
 func process(conn net.Conn) {
 
+	// {TODO}: 这里不填写会有什么问题?
 	defer conn.Close()
 	for {
 		bt, err := unpack.Decode(conn)
